@@ -16,6 +16,7 @@ function doGet(){//Webアプリケーションとして公開
   url=results[0];
   console.log(url)
   sendmail(url)
+  slackbot(url)
   display=results[1]
   num=results[2]
   text=makehtml(disply,num)
